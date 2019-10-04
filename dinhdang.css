@@ -1,0 +1,34 @@
+@charset "utf-8";
+#test{
+font-weight: bold;
+font-size: 40px;
+color: while;
+}
+#header{
+width: 985px;
+height: 271px;
+}
+div.header 
+  {
+  width:500px; 
+  height:250px;
+  background:url(h3.jpg) repeat;
+  border:5px solid black;
+  }
+div.test
+  {
+  width:150px;
+  height:35px;
+  margin:100px 200px;
+  background-color:#rrffbb;  
+  border:0px solid black; 
+  opacity:0.6;
+  filter:alpha(opacity=60);
+  }
+div.header p
+  {
+  margin:9px 9px;
+  text-align:center;
+  font-weight:bold;
+  color:red;
+  }
