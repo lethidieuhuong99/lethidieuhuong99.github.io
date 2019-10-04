@@ -4,14 +4,10 @@ font-weight: bold;
 font-size: 40px;
 color: while;
 }
-#header{
-width: 4000px;
-height: 270px;
-}
 div.header 
   {
-  width:500px; 
-  height:250px;
+  width:4000px; 
+  height:270px;
   background:url(h3.jpg) repeat;
   border:5px solid black;
   }
