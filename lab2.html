@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+                <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="dinhdang.css" type="text/css"/>
+           </head>
+           <title> Lab </title>
+       <head> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        HUMAN COMPUTER INTERACTION </head>
+       <hr>
+       <body>
+       <h2> 
+       <div class="row">
+           <div class="col-sm-4 text-center" >
+               <a href= "about.html"> About </a> 
+           </div>
+           <div class="col-sm-4 text-center">
+               <a href= "lab.html"> Excersices </a> 
+           </div>
+           <div class="col-sm-4 text-center">
+               <a href= "index.html"> Website </a>
+           </div>
+       </div>
+       </h2>
+       <h3>
+           <div class="row">
+           <div class="col-sm-2 text-center"><a href = "lab1.html">Lab 1</a></div>
+           <div class="col-sm-2 text-center"><a href = "lab2.html">Lab 2</a></div>
+           <div class="col-sm-2 text-center"><a href = "lab3.html">Lab 3</a></div>
+           <div class="col-sm-2 text-center"><a href = "lab4.html">Lab 4</a></div>
+           <div class="col-sm-2 text-center"><a href = "lab5.html">Lab 5</a></div>
+           <div class="col-sm-2 text-center"></div>
+           </div>
+       </h3>
+       </body>
+           <style type="text/css">
+               div.container {
+                   width: 100%;  
+                   
+               }
+               div.tab {
+                   overflow: hidden; 
+                   border: 1px solid #ccc; 
+                   background-color: #f1f1f1; 
+               }
+               div.tab button {
+                   background-color: inherit; 
+                   float: left;
+                   border: none;
+                   outline: none;
+                   cursor: pointer;
+                   padding: 14px 16px;
+                   transition: 0.3s;
+                   font-size: 17px;
+               }
+               div.tab button:hover {
+                   background-color: #ddd;
+               }
+       
+               div.tab button.active {
+                   background-color: #ccc;
+               }
+               .tabcontent {
+                   display: none;
+                   padding: 6px 12px;
+                   border: 1px solid #ccc;
+                   border-top: none;
+               }
+           </style>
+           <body>
+               <div class="container">
+                   <div class="tab">
+                     <button class="tablinks active">Requirement</button>
+                     <button class="tablinks">Design</button>
+                     <button class="tablinks">Implement</button>
+                     <button class="tablinks">User Scenario</button>
+                   </div>
+       
+                   <div id="Requirement" class="tabcontent">              
+                       <p>
+                            (1) Tạo ra một user scenario.
+                            (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương ứng cho thiết kế này. 
+                            Upload lên Azure/github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).  
+                       </p>
+                   </div>
+       
+                   <div id="Design" class="tabcontent">    
+                       <p>
+                           <h4 class="design"> 1. Design on Paper </h4>
+                           <img src = "h16.jpg" title="Design" width = 400px height 300px/></br>
+                           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                           <a class="download" href= "h16.jpg" download = "h16.jpg">Download</a>
+                           &emsp;&emsp;&emsp;&emsp;&emsp;
+                           
+                           <h4 class="design"> 2. Design on Figma </h4>
+                           <img src = "h15.jpg" title="Design" width = 400px height 300px/></br>
+                           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                           <a class="download" href = "lab2.fig" download ="lab2.figma"> Download</a>
+                           <br>
+                           <br>
+                           <br>
+                           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                           <a class ="download" href= "fix2.rar"> Download all</a>
+                           </h4>
+                       </p> 
+                   </div>
+       
+                    <div id="Implement" class="tabcontent">
+                       
+                           
+                    </div>
+
+                    <div id="User Scenario" class="tabcontent">
+                        <p>Cách đặt hàng trên Coffee Shop</p>
+                       <img src ="h14.jpg">
+                           
+                        </div>
+           </body>
+           <script type="text/javascript">
+               var buttons = document.getElementsByClassName('tablinks');
+               var contents = document.getElementsByClassName('tabcontent');
+               function showContent(id){
+                   for (var i = 0; i < contents.length; i++) {
+                       contents[i].style.display = 'none';
+                   }
+                   var content = document.getElementById(id);
+                   content.style.display = 'block';
+               }
+               for (var i = 0; i < buttons.length; i++) {
+                   buttons[i].addEventListener("click", function(){
+                       var id = this.textContent;
+                       for (var i = 0; i < buttons.length; i++) {
+                           buttons[i].classList.remove("active");
+                       }
+                       this.className += " active";
+                       showContent(id);
+                   });
+               }
+               showContent('PHP');
+           </script>
+</html>
