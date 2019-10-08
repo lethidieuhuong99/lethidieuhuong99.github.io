@@ -1,13 +1,18 @@
 @charset "utf-8";
-#test{
-font-weight: bold;
+
+header.container p {
+color: rgb(255, 255, 255);
 font-size: 40px;
-color: white;
 }
-#images{
-	position: absolute;
-	width: 900px;
-	height: 270px;
-	left: 0px;
-	top: 0px;
+pre.dn{
+	color: rgb(255, 255, 255);
+	text-align: right;
+}
+img.im{
+	width: 38px;
+	height: 33px;
+}
+img.h5{
+	width: 300px;
+	height: 230px;
 }
