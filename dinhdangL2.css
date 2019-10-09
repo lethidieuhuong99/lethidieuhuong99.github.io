@@ -1,4 +1,12 @@
 @charset "utf-8";
+header.container p {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    }
+    pre.dn{
+        color: rgb(255, 255, 255);
+        text-align: right;
+    }
 img.id{
     width: 300px;
 	height: 230px;
