@@ -2,13 +2,11 @@
 <html>
         <head>
                 <meta charset="utf-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-         <link rel="stylesheet" href="dinhdangL2.css" type="text/css"/>
-         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dinhdang.css" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
            </head>
            <title> Lab </title>
        <head>
@@ -74,113 +72,90 @@
                    border-top: none;
                }
            </style>
-           <body>
-               <div class="container">
-                   <div class="tab">
-                     <button class="tablinks active">Requirement</button>
-                     <button class="tablinks">Design</button>
-                     <button class="tablinks">Implement</button>
-                     <button class="tablinks">User Scenario</button>
-                   </div>
-       
-                   <div id="Requirement" class="tabcontent">              
-                       <p>
-                            (1) Tạo ra một user scenario.<br/>
-                            (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương ứng cho thiết kế này. 
-                            Upload lên Azure/github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).  
-                       </p>
-                   </div>
-       
-                   <div id="Design" class="tabcontent">    
-                        <div class="row">
-                                <div class="col-sm-6">
-                                    <h4 class="design"> 1. Design on Paper </h4>
-                                    <img id="h16" src = "h16.jpg" width="400px" height="300" /></br>
-                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                                    <a class="download" href= "h16.jpg" download = "h16.jpg">Download</a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4 class="design"> 2. Design on Figma </h4>
-                                    <img id="h15" src = "h15.jpg" width="400px" height="300"/></br>
-                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                                    <a class="download" href = "17130082_Design/Lab2.fig" > Download</a>
-                                </div>
+          <body>
+                <div class="container">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#Requirement">Requirement</a></li>
+                    <li><a data-toggle="tab" href="#Design">Design</a></li>
+                    <li><a data-toggle="tab" href="#Implement">Implement</a></li>
+                    <li><a data-toggle="tab" href="#UserScenario">User Scenario</a></li>
+                  </ul>
+                
+                  <div class="tab-content">
+                    <div id="Requirement" class="tab-pane fade in active">
+                      <p>
+                        (1) Tạo ra một user scenario.<br/>
+                        (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương ứng cho thiết kế này. 
+                        Upload lên Azure/github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).  
+                   </p>
+                    </div>
+                    <div id="Design" class="tab-pane fade">
+                      <div class="row">
+                        <div class="col-sm-6">
+                            <h4 class="design"> 1. Design on Paper </h4>
+                            <img id="h16" src = "h16.jpg" width="400px" height="300" />
+                            <a class="download" href= "h16.jpg" download = "h16.jpg">Download</a>
                         </div>
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                        <a class ="download" href= "fix2.rar"> Download all</a>   
-                   </div>
-       
-                    <div id="Implement" class="tabcontent">
-                            <div class="container-fluid">
-                            <header class="container" style="background-image: url(h3.png); ">
-                                    <p style="padding: 50px 20px">COFFEE SHOP</p>
-                            
-                                <div class="text text-right" >
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <button type="button" class="btn btn-dark">Trang chủ</button>
-                                        </div>
-                                                                
-                                        <div class="col-sm-3">
-                                            <button type="button" class="btn btn-dark">Đăng nhập</button>
-                                            <button type="button" class="btn btn-dark">Đăng ký</button>
-                                        </div>
-                                        
-                                        <div class="col-sm-3">
-                                                <input  type="text" placeholder="Tìm Kiếm..." > 
-                                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="design"> 2. Design on Figma </h4>
+                            <img id="h15" src = "h15.jpg" width="400px" height="300"/>                                   
+                            <a class="download" href = "17130082_Design/Lab2.fig" > Download</a>
+                        </div>
+                </div>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <a class ="download" href= "fix2.rar"> Download all</a> 
+                    </div>
+                    <div id="Implement" class="tab-pane fade">
+                      <div class="container-fluid">
+                        <header class="container" style="background-image: url(h3.png); ">
+                                <p style="padding: 50px 20px">COFFEE SHOP</p>
+                        
+                            <div class="text text-right" >
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button type="button" class="btn btn-dark">Trang chủ</button>
+                                    </div>
+                                                            
+                                    <div class="col-sm-3">
+                                        <button type="button" class="btn btn-dark">Đăng nhập</button>
+                                        <button type="button" class="btn btn-dark">Đăng ký</button>
+                                    </div>
+                                    
+                                    <div class="col-sm-3">
+                                            <input  type="text" placeholder="Tìm Kiếm..." > 
                                     </div>
                                 </div>
-                                    </header>
-                       <div class="text-center"><p><h4>Mua ngay</h4></p></div>
-                       <div class="row">
-                            <div class="col-sm-4">
-                                <img class="id" src="h8.jpg" />
                             </div>
-                            <div class="col-sm-4">
-                                    <br/>  <br/> 
-                                <p>Flat While</p>
-                                <p>32.000Đ</p>
-                                <p>Mô tả: </p>
-                                <p>Flat White là sự kết hợp giữa espresso và sữa tươi đánh nóng. 
-                                    Điều tạo nên sự đặc biệt của Flat White chính là một lớp foam rất mỏng (micro foam).</p>
-                            </div>
-                            <div class="col-sm-4">
-                                <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> 
-                                    <button type="button" class="btn btn-outline-primary text-align: right">Thêm vào giỏ hàng</button>
-                            </div>
-                       </div>
-                           
-                    </div>
-                    </div>
-                    <div id="User Scenario" class="tabcontent">
-                        <p>Cách đặt hàng trên Coffee Shop</p>
-                       <img src ="h14.jpg">
-
+                                </header>
+                   <div class="text-center"><p><h4>Mua ngay</h4></p></div>
+                   <div class="row">
+                        <div class="col-sm-4">
+                            <img class="id" src="h8.jpg" style="width: 300px; height: 300px;" />
                         </div>
-           </body>
-           <script type="text/javascript">
-               var buttons = document.getElementsByClassName('tablinks');
-               var contents = document.getElementsByClassName('tabcontent');
-               function showContent(id){
-                   for (var i = 0; i < contents.length; i++) {
-                       contents[i].style.display = 'none';
-                   }
-                   var content = document.getElementById(id);
-                   content.style.display = 'block';
-               }
-               for (var i = 0; i < buttons.length; i++) {
-                   buttons[i].addEventListener("click", function(){
-                       var id = this.textContent;
-                       for (var i = 0; i < buttons.length; i++) {
-                           buttons[i].classList.remove("active");
-                       }
-                       this.className += " active";
-                       showContent(id);
-                   });
-               }
-               showContent('PHP');
-           </script>
+                        <div class="col-sm-4">
+                                <br/>  <br/> 
+                            <p>Flat While</p>
+                            <p>32.000Đ</p>
+                            <p>Mô tả: </p>
+                            <p>Flat White là sự kết hợp giữa espresso và sữa tươi đánh nóng. 
+                                Điều tạo nên sự đặc biệt của Flat White chính là một lớp foam rất mỏng (micro foam).</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> 
+                                <button type="button" class="btn btn-outline-primary text-align: right">Thêm vào giỏ hàng</button>
+                        </div>
+                   </div>
+                       
+                      </div>
+                    </div>
+                    <div id="UserScenario" class="tab-pane fade">
+                      <p>Cách đặt hàng trên Coffee Shop</p>
+                        <img src ="h14.jpg">
+                        <a class="download" href = "h14.jpg" > Download</a>
+                    </div>
+                  </div>
+                </div>     
+                </body>
 </html>
