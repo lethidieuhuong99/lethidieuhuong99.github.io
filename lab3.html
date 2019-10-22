@@ -22,7 +22,7 @@
                <a href= "about.html"> About </a> 
            </div>
            <div class="col-sm-4 text-center">
-               <a href= "lab.html"> Excersices </a> 
+               <a href= "lab.html"> Excersices </a>
            </div>
            <div class="col-sm-4 text-center">
                <a href= "index.html"> Home </a>
@@ -77,41 +77,53 @@
         
     <body>
         <div class="container">
-            <div class="tab">
-              <button class="tablinks active">Ex1</button>
-              <button class="tablinks ">Ex2</button>      
+            <div class="row">
+                <div class="group-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item active">
+                            <a class="nav-link active" data-toggle="tab" href="" aria-expanded="true">Ex1</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="" aria-expanded="true">Ex2</a>
+                            </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="ex1" class="container tab-pane active">
+                            <div class="contan">
+                                <ul class="nav nav-tab" role="tablist">
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" data-toggle="tab" href="" aria-expanded="true">Design1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="" aria-expanded="false">Implement1</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="design" class="container tab-pane fade active in">
+                                        <div id="Design" class="tabcontent1">
+                                                <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h4 class="design"> 1. Design on Paper </h4>
+                                                            <img id="H31.jpg" src = "H31.jpg" width="400px" height="300" /></br>
+                                                            <a class="download" href= "H31.jpg" download = "h16.jpg">Download</a>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <h4 class="design"> 2. Design on Figma </h4>
+                                                            <img id="mauF.jpg" src = "mauF.jpg" width="400px" height="300"/></br>                                    
+                                                            <a class="download" href = "17130082_Design/lab3F.fig" > Download</a>
+                                                        </div>
+                                                </div>
+                                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                <a class ="download" href= "fix3F.rar"> Download all</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
             </div>
-
-            <div id="Ex1" class="tabcontent">
-                <div class="tab">       
-                        <button class="tablinks active">Design</button>
-                        <button class="tablinks ">Implement</button>  
-                </div> 
-            </div>
-
-            <div id="Ex2" class="tabcontent">
-               
-            </div>
-            <script type="text/javascript">
-                var buttons = document.getElementsByClassName('tablinks');
-                var contents = document.getElementsByClassName('tabcontent');
-                function showContent(id){
-                    for (var i = 0; i < contents.length; i++) {
-                        contents[i].style.display = 'none';
-                    }
-                    var content = document.getElementById(id);
-                    content.style.display = 'block';
-                }
-                for (var i = 0; i < buttons.length; i++) {
-                    buttons[i].addEventListener("click", function(){
-                        var id = this.textContent;
-                        for (var i = 0; i < buttons.length; i++) {
-                            buttons[i].classList.remove("active");
-                        }
-                        this.className += " active";
-                        showContent(id);
-                    });
-                }
-                showContent('PHP');
-            </script>
-       </html>
+        </div>
+    </body>
+</html>
