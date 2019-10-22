@@ -1,14 +1,13 @@
 <!DOCTYPE HTML>
 <html>
  <head>
-         <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="dinhdang.css" type="text/css"/>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     </head>
 	<title> Lab </title>
 <head> 
@@ -74,139 +73,116 @@
             border-top: none;
         }
     </style>
-    <body>
-        <div class="container">
-            <div class="tab">
-              <button class="tablinks active">Requirement</button>
-              <button class="tablinks">Design</button>
-              <button class="tablinks">Implement</button>
-            </div>
-
-            <div id="Requirement" class="tabcontent">              
-                <p>
-                    Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như <b>sinh viên</b>, <b>môn học</b>, <b>giảng viên</b>,… để thiết kế trên phần
-					mềm một chức năng trên web để <b>thêm</b>, <b>sửa</b>, <b>xóa</b>, <b>tìm kiếm</b> cho đối tượng đó. 
-                </p>
-            </div>
-
-            <div id="Design" class="tabcontent">    
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4 class="design"> 1. Design on Paper </h4>
-                        <img id="h" src = "H.jpg"/> <br/>
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                        <a id="d1" class="download" href= "H.jpg" download = "H.jpg">Download</a>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                            <h4 class="design"> 2. Design on Figma </h4>
-                            <img id="h1" src = "H2.jpg"/>
-                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                            <a id="d2" class="download " href = "17130082_Design/Lab1.fig" > Download</a>
-                    </div>
-                </div>
-                <br/> <br/> <br/>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                <a class ="download " href= "fix.rar"> Download all</a>
-            </div>
-
-            <div id="Implement" class="tabcontent">
-                <div class="container-fluid">
-                    <header class="container" style="background-image: url(h3.png); ">
-                            <p style="padding: 50px 20px">COFFEE SHOP</p>
-                    
-                            <div class="text text-right" >
-                                <div class="row">
-                                        <div class="col-sm-3">
-                                        </div>
-                                        <div class="col-sm-3">
-                                                <button type="button" class="btn btn-dark">Trang chủ</button>
-                                        </div>
-                                                        
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn btn-dark">Đăng nhập</button>
-                                    <button type="button" class="btn btn-dark">Đăng ký</button>
-                                </div>
-                                
-                                <div class="col-sm-3">
-                                        <input  type="text" placeholder="Tìm Kiếm..." > 
-                                </div>
-                                </div>
-                            </div>
-                            </header>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-6"> <p class="container"><img class="im" src="h12.png"/> Giỏ hàng</p> </div>
-                                    <div class="col-sm-6"> <p class="container" style="text-align: right"> Tất cả sản phẩm</p> </div>
-                                </div>
-                            </div>
-                    
-                    
-                            <section class="container">
-                               <div class="row">
-                                    <div class="col-sm-8" style=" border-right: 1px solid #000000;">
-                                        <p style="text-align: center">Coffee</p>
-                                    </div>
-                                    <div class="col-sm-4">
-                                            <p style="text-align: center">Juice</p>
-                                    </div>
-                               </div>
-                               <div class="row">
-                                    <div class="col-sm-4">
-                                        <img class="h5" src="h5.jpg" /> 
-                                        <p>Original coffee</p>
-                                    <div class="row">
-                                        <div class="col-sm-4"> <p>30.000Đ</p></div>
-                                        <div class="col-sm-4"> <p></p></div>
-                                        <div class="col-sm-4">  <button type="button" class="btn btn-outline-primary">Mua ngay</button> </div>
-                                    </div>
-                                 
-                                    </div>
-                                    <div class="col-sm-4" style=" border-right: 1px solid #000000;">
-                                            <img class="h5" src="h7.png" /> 
-                                            <p>Espresso </p>
-                                        <div class="row">
-                                            <div class="col-sm-4"> <p>35.000Đ</p></div>
-                                            <div class="col-sm-4"> <p></p></div>
-                                            <div class="col-sm-4">  <button type="button" class="btn btn-outline-primary">Mua ngay</button> </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                            <img class="h5" src="h9.jpg" /> 
-                                            <p>Pomegranate juice</p>
-                                        <div class="row">
-                                            <div class="col-sm-4"> <p>20.000Đ</p></div>
-                                            <div class="col-sm-4"> <p></p></div>
-                                            <div class="col-sm-4">  <button type="button" class="btn btn-outline-primary">Mua ngay</button> </div>
-                                        </div>
-                                    </div>
-                    
-                                </div>
-                            </section>
-                </div>
-                    
+<body>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#Requirement">Requirement</a></li>
+        <li><a data-toggle="tab" href="#Design">Design</a></li>
+        <li><a data-toggle="tab" href="#Implement">Implement</a></li>
+      </ul>
+    
+      <div class="tab-content">
+        <div id="Requirement" class="tab-pane fade in active">
+          <p>
+            Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như <b>sinh viên</b>, <b>môn học</b>, <b>giảng viên</b>,… để thiết kế trên phần
+            mềm một chức năng trên web để <b>thêm</b>, <b>sửa</b>, <b>xóa</b>, <b>tìm kiếm</b> cho đối tượng đó. 
+        </p>
         </div>
+        <div id="Design" class="tab-pane fade">
+          <div class="row">
+            <div class="col-sm-6">
+                <h4 class="design"> 1. Design on Paper </h4>
+                <img id="h" style="width: 400px; height: 400px;" src = "H.jpg"/>
+                <a id="d1" class="download" href= "H.jpg" download = "H.jpg">Download</a>
+            </div>
+            
+            <div class="col-sm-6">
+                    <h4 class="design"> 2. Design on Figma </h4>
+                    <img id="h1" style="width: 400px; height: 400px;" src = "H2.jpg" />
+                    <a id="d2" class="download " href = "17130082_Design/Lab1.fig" > Download</a>
+            </div>
+        </div>
+      </br></br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <a id="download" class ="download" href= "fix.rar"> Download all</a> 
+        </div>
+        <div id="Implement" class="tab-pane fade">
+          <div class="container-fluid">
+            <header class="container" style="background-image: url(h3.png); ">
+                    <p style="padding: 50px 20px">COFFEE SHOP</p>
+            
+                    <div class="text text-right" >
+                        <div class="row">
+                                <div class="col-sm-3">
+                                </div>
+                                <div class="col-sm-3">
+                                        <button type="button" class="btn btn-dark">Trang chủ</button>
+                                </div>
+                                                
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-dark">Đăng nhập</button>
+                            <button type="button" class="btn btn-dark">Đăng ký</button>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                                <input  type="text" placeholder="Tìm Kiếm..." > 
+                        </div>
+                        </div>
+                    </div>
+                    </header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6"> <p class="container"><img class="im" src="h12.png"/> Giỏ hàng</p> </div>
+                            <div class="col-sm-6"> <p class="container" style="text-align: right"> Tất cả sản phẩm</p> </div>
+                        </div>
+                    </div>
+            
+            
+                    <section class="container">
+                       <div class="row">
+                            <div class="col-sm-8" style=" border-right: 1px solid #000000;">
+                                <p style="text-align: center">Coffee</p>
+                            </div>
+                            <div class="col-sm-4">
+                                    <p style="text-align: center">Juice</p>
+                            </div>
+                       </div>
+                       <div class="row">
+                            <div class="col-sm-4">
+                                <img class="h5" src="h5.jpg" /> 
+                                <p>Original coffee</p>
+                            <div class="row">
+                                <div class="col-sm-4"> <p>30.000Đ</p></div>
+                                <div class="col-sm-4"> <p></p></div>
+                                <div class="col-sm-4">  <button type="button" class="btn btn-outline-primary">Mua ngay</button> </div>
+                            </div>
+                         
+                            </div>
+                            <div class="col-sm-4" style=" border-right: 1px solid #000000;">
+                                    <img class="h5" src="h7.png" /> 
+                                    <p>Espresso </p>
+                                <div class="row">
+                                    <div class="col-sm-4"> <p>35.000Đ</p></div>
+                                    <div class="col-sm-4"> <p></p></div>
+                                    <div class="col-sm-4">  <button type="button" class="btn btn-outline-primary">Mua ngay</button> </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                    <img class="h5" src="h9.jpg" /> 
+                                    <p>Pomegranate juice</p>
+                                <div class="row">
+                                    <div class="col-sm-4"> <p>20.000Đ</p></div>
+                                    <div class="col-sm-4"> <p></p></div>
+                                    <div class="col-sm-4">  <button type="button" class="btn btn-outline-primary">Mua ngay</button> </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </section>
+        </div>
+        </div>
+      </div>
+    </div>
+    
     </body>
-    <script type="text/javascript">
-        var buttons = document.getElementsByClassName('tablinks');
-        var contents = document.getElementsByClassName('tabcontent');
-        function showContent(id){
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = 'none';
-            }
-            var content = document.getElementById(id);
-            content.style.display = 'block';
-        }
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener("click", function(){
-                var id = this.textContent;
-                for (var i = 0; i < buttons.length; i++) {
-                    buttons[i].classList.remove("active");
-                }
-                this.className += " active";
-                showContent(id);
-            });
-        }
-        showContent('PHP');
-    </script>
 </html> 
