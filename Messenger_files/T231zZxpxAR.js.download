@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["D++lP"]); }
+
+__d("MessengerMQTTPresence",["BanzaiODS","FBMqttChannel","gkx"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g="/orca_presence",h="mqtt_web.presence",i="/send_additional_contacts",j=!1;a={subscribe:function(a){if(j)return;j=!0;b("FBMqttChannel").subscribe(g,function(c){c=JSON.parse(c);c&&c.list&&(b("gkx")("983392")&&c.list_type&&c.list_type==="full"&&a.reset(),a.setMultiFromMQTT(c.list),b("BanzaiODS").bumpEntityKey(3303,h,"buddylist.event"),b("BanzaiODS").bumpEntityKey(3303,h,"buddylist.active_buddies",c.list.length))})},unsubscribe:function(){j=!1,b("FBMqttChannel").unsubscribeAll(g)},sendAdditionalBuddyRequest:function(a){b("FBMqttChannel").publish(i,JSON.stringify({additional_contacts:[a]}))}};e.exports=a}),null);
+__d("legacy:AudienceSelector",["AudienceSelector"],(function(a,b,c,d,e,f){b("AudienceSelector")}),3);
