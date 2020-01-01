@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+header.container p {
+color: rgb(255, 255, 255);
+font-size: 40px;
+}
+pre.dn{
+	color: rgb(255, 255, 255);
+	text-align: right;
+}
+p.h1{
+    font-size: 15px;
+}
+img.h2{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+button.bt1{
+    margin-left: 200px;
+    background-color: #868686;
+    color: #FFFFFF; 
+    font-size: 18px;
+}
+button.bt2{
+    margin-left: 200px;
+    background-color: #D67037;
+    color: #FFFFFF; 
+    font-size: 18px;
+}
+img.im{
+	width: 38px;
+	height: 33px;
+}
+img.h5{
+    margin-left: 50px;
+	width: 300px;
+	height: 230px;
+}
+img.h{
+    height: 259px;
+    width: 170px;
+    font-size: 15px;
+    line-height: 1.5;
+    vertical-align: middle;
+    border-style: none;
+}
+a.download{
+    background-color: rgb(189, 91, 0);
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a.travel{
+    width: 101px;
+    height: 32px;
+    left: 10px;
+    top: 8px;
+
+    font-family: Rhodium Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 51px;
+}
+input.tlS{
+    padding-top: 20px;
+}
+@keyframes Japan {
+    100% {background-color: coral;}
+}
+#Japan{
+    padding: 10px 15px;
+    color: white;
+    background-color: coral;
+    animation: topflat 3s infinite alternate;
+    -webkit-animation: topflat 3s infinite alternate;
+}
+@keyframes Japan1 {
+    100% {background-color: rgb(156, 152, 151);}
+}
+#Japan1{
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(156, 152, 151);
+    animation: topflat 3s infinite alternate;
+    -webkit-animation: topflat 3s infinite alternate;
+}
+
+@keyframes Ja {
+    100% {background-color: coral;}
+}
+#Ja {
+    text-align: right;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    background-color: coral;
+    animation: topflat 3s infinite alternate;
+    -webkit-animation: topflat 3s infinite alternate;
+}
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #F6F2F2;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: rgb(0, 0, 0);
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    caret-color:rgb(0, 0, 0);
+    transition: width 0.4s linear;
+    }
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+    
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
